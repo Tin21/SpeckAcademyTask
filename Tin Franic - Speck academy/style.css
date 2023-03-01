@@ -1,0 +1,85 @@
+body {
+    background: #ffffff;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 80px;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+#techStack {
+    border-radius: 5px;
+    border: none;
+    outline: 2px solid #000000;
+    padding: 10px 15px; 
+    transition: 300ms ease-in-out;
+}
+
+#techStack:focus {
+    outline: 2px solid rgb(177, 51, 51);
+}
+
+#item {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 25px;
+    border-radius: 15px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(177, 51, 51),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#addButton {
+    background: rgba(250, 206, 206, 0.884);
+    padding: 10px 32px; 
+    border-radius: 5px;
+    border: none;
+    outline: 2px solid rgb(177, 51, 51);
+    color: rgb(177, 51, 51);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+#addButton:hover {
+    background: rgb(177, 51, 51);
+    color: #ffffff;
+}
+
+#removeButton {
+    background: transparent;
+    outline: none;
+    border: none;
+    text-decoration: underline;
+    color: rgb(177, 51, 51);
+    cursor: pointer;
+}
+
+#container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.gap {
+    gap: 32px;
+}
+
+.errMsg {
+    color: rgb(177, 51, 51);
+    font-weight: bolder;
+}
